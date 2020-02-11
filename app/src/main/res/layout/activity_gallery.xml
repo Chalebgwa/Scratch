@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_gallery"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.nest.scratch.Gallery">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/top">
+
+                <ImageView
+                    android:layout_width="match_parent"
+
+                    android:id="@+id/item_image"
+                    android:clickable="true"
+                    android:scaleType="fitCenter"
+                    android:layout_height="400dp"
+                    android:background="@color/com_facebook_button_background_color_focused"
+                    app:srcCompat="@drawable/item_pic" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/camera"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="22dp"
+                    android:id="@+id/camera_acess"
+                    android:background="@color/com_facebook_button_background_color_focused"
+
+                     />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true">
+
+                    <ImageButton
+                        app:srcCompat="@drawable/add_picture"
+                        android:id="@+id/addbutton0"
+                        android:layout_weight="1"
+
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:elevation="1dp"
+                        android:scaleType="fitXY" />
+
+                    <ImageButton
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:id="@+id/addbutton1"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/add_picture"
+                        android:scaleType="fitXY" />
+
+                    <ImageButton
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        app:srcCompat="@drawable/add_picture"
+                        android:id="@+id/addbutton2"
+                        android:layout_weight="1"
+                        android:scaleType="fitXY" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/bottom"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/top"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/Title"
+                    android:hint="@string/title" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/description"
+                    android:hint="@string/Description" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:id="@+id/price"
+                    android:hint="@string/item_price"
+                    android:inputType="numberDecimal" />
+
+                <CheckBox
+                    android:text="Share on Facebook"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/button"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:id="@+id/share"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:text="Post Item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@+id/bottom"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/button"
+                    android:background="@color/colorPrimary" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

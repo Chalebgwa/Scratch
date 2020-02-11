@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/notbox">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/me"
+            android:id="@+id/not_box_pic"
+            android:cropToPadding="false"
+            android:padding="6dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="you have been hacked"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/not_text"
+                android:padding="6dp" />
+
+            <TextView
+                android:text="2 hours"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/not_text"
+                android:id="@+id/not_time"
+                android:padding="6dp" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

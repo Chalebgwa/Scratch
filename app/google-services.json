@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "224362227664",
+    "firebase_url": "https://scratch-e8cb1.firebaseio.com",
+    "project_id": "scratch-e8cb1",
+    "storage_bucket": "scratch-e8cb1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:224362227664:android:be5165dc3e42e559",
+        "android_client_info": {
+          "package_name": "com.nest.scratch"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "224362227664-p5al7kljap68j6uqdvbp99khsrjpv8s7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9eC2_NVfw5Sd-QAgeH0-QpXIG3MxV-CA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "224362227664-p5al7kljap68j6uqdvbp99khsrjpv8s7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
